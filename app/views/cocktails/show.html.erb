@@ -1,4 +1,12 @@
 <div class="container mt-4 bg-white">
   <h1><%= @cocktail.name %></h1>
-  <%= link_to "Back to Cocktails", cocktails_path, class: "btn btn-primary"  %>
+  <h2>Doses</h2>
+  <% @cocktail.doses.each do|dose| %>
+    <p><%= dose.description%> | <%= dose.ingredient.name %></p>
+    <p><%= link_to "Delete Dose",  cocktail_dose_path(dose), class: "btn btn-danger btn-sm", method: :delete,
+      data: { confirm: "Are you sure?" } %></p>
+  <% end %>
+  <p><%= link_to "Back to Cocktails", cocktails_path, class: "btn btn-primary"  %><p>
+  <p><%= link_to "Add Dose to Cocktail", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %></p>
+
 </div>
