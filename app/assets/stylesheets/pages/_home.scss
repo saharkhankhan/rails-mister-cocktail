@@ -1,1 +1,14 @@
-// Specific CSS for your home-page
+.cocktail-link{
+  text-decoration: none;
+}
+
+.cocktail-link{
+  text-decoration: none;
+  color: #292F33;
+  font-family: 'Roboto Slab', serif;
+  &:hover {
+    color: grey;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+  }
+}
