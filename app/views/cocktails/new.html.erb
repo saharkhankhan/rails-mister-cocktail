@@ -1,0 +1,7 @@
+<<div class="container pt-4">
+  <h1>Add a New Cockatil</h1>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name, label: 'Add cocktail name' %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  <% end %>
+</div>
