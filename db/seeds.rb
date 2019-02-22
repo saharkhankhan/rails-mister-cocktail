@@ -3,6 +3,7 @@ require 'open-uri'
 
 puts "Cleaning Data Base"
 
+Cocktail.destroy_all
 Dose.destroy_all
 Ingredient.destroy_all
 

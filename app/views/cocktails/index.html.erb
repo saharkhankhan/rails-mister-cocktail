@@ -7,6 +7,8 @@
   <% @cocktails.each do |cocktail| %>
     <div class = "border rounded bg-white p-2">
       <p><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-link" %></p>
+      <%= cl_image_tag cocktail.photo.url(:thumnail) %>
+
     </div>
   <% end %>
   <%= link_to "Add a New Cocktail", new_cocktail_path, class: "btn btn-outline-primary my-4" %>
