@@ -12,3 +12,9 @@
     text-decoration: none;
   }
 }
+
+.cocktail-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

@@ -6,9 +6,12 @@
 <div class="container cocktail-list pt-4">
   <% @cocktails.each do |cocktail| %>
     <div class = "border rounded bg-white p-2">
-      <p><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-link" %></p>
+      <h4><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-link" %></h4>
       <%= cl_image_tag cocktail.photo.url(:thumnail) %>
 
     </div>
   <% end %>
+</div>
+<div class="container d-flex justify-content-around">
   <%= link_to "Add a New Cocktail", new_cocktail_path, class: "btn btn-outline-primary my-4" %>
+</div>

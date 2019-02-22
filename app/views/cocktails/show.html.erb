@@ -19,7 +19,8 @@
         <p><%= link_to "Back to Cocktails", root_path, class: "btn btn-outline-primary mt-4"  %><p>
       </div>
     </div>
-    <div class="drink-image">
+    <div class="drink-image" style="background-image:
+         url('<%= cl_image_path @cocktail.photo, height: 300, width: 400, crop: :fill %>')">
     </div>
 
 </div>
