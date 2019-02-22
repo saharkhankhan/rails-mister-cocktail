@@ -3,6 +3,7 @@ require 'open-uri'
 
 puts "Cleaning Data Base"
 
+Dose.destroy_all
 Ingredient.destroy_all
 
 puts "Creating Ingredients..."
