@@ -1,6 +1,6 @@
 <div class="container mt-4">
-  <div class="d-flex justify-content-between">
-    <div class="card d-flex flex-column justify-content-between">
+  <div class="d-flex flex-wrap-reverse justify-content-between">
+    <div class="card d-flex flex-grow flex-column justify-content-between">
       <div>
         <h1><%= @cocktail.name %></h1>
         <h2>Ingredients:</h2>
@@ -11,7 +11,7 @@
               data: { confirm: "Are you sure?" }, class: "font-red" do%></p>
                  <i class='far fa-trash-alt'></i>
               <% end %>
-            </div>
+          </div>
         <% end %>
       </div>
       <div>
